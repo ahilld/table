@@ -1,1 +1,89 @@
- 
+*{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+body{
+    margin: 2vh 0;
+    font-family: 'Arial', sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    --oddColor--: #ececec;
+    --evenColor--: #dbdbdb;
+
+    width: max-content;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th{
+    padding: 0.7em;
+}
+td{
+    padding: 1em;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+th > p{
+    color: white;
+    padding: 0.2em 1em;
+}
+
+p:nth-child(3) {
+    font-size: 1.5em;
+}
+
+tr:nth-child(2n+2) {
+    background-color: var(--evenColor--);
+}
+
+tr:nth-child(2n+3) {
+    background-color: var(--oddColor--)
+}
+
+td:first-child {
+    text-align: left;
+    padding-left: 2em;
+}
+
+tr:nth-child(2n+2) > td:nth-child(even) {
+    background-color: #e7e7e7;
+}
+tr:nth-child(2n+3) > td:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+
+th:nth-child(1){
+    background-color: rgba(6,21,57,0.6);
+}
+
+th:nth-child(2){
+    background-color: rgba(6,21,57,0.7);
+}
+
+th:nth-child(3){
+    background-color: rgba(6,21,57,0.8);
+}
+
+th:nth-child(4){
+    background-color: rgba(6,21,57,0.9);
+}
+
+th:nth-child(5){
+    background-color: rgba(6,21,57,1);
+}
+
+a{
+    text-decoration: none;
+    color: #818080;
+    padding: 0.5em 2em;
+    border: 1px solid gray;
+    font-size: 0.9em;
+    background-color: #d3d3d3;
+    text-transform: uppercase;
+}
